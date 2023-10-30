@@ -1,0 +1,658 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+header nav {
+  background-color: #ffffff;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  border: thin solid rgba(22, 24, 35, 0.0588235294);
+  padding: 10px;
+  gap: 10px;
+}
+header nav div {
+  color: transparent;
+}
+header nav .formi {
+  background-color: rgba(22, 24, 35, 0.0588235294);
+  width: 500px;
+  border-radius: 94px;
+  padding: 12px 14px;
+  margin-left: 95px;
+}
+header nav .formi form {
+  width: 90%;
+}
+header nav .formi form input {
+  font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0;
+  width: 100%;
+  color: rgb(22, 24, 35);
+  caret-color: rgb(254, 44, 85);
+  display: inline-block;
+  border-right: thin solid rgb(205, 206, 211);
+  z-index: 1;
+}
+header nav .formi form .butt1 {
+  padding: 11px 28px 11px 12px;
+  margin: -11px -16px -12px 0px;
+  font-size: 0;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+  margin-left: 0;
+  position: absolute;
+  z-index: 0;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+}
+header nav .formi form .butt1:hover {
+  background-color: rgba(22, 24, 35, 0.0588235294);
+  color: black;
+}
+header nav .formi:hover {
+  border: thin solid rgba(23, 48, 190, 0.0588235294);
+}
+header nav .nav-butt {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+header nav .nav-butt .butt2 {
+  padding: 5px 20px;
+  background-color: transparent;
+  border: thin solid rgba(22, 24, 35, 0.0588235294);
+  font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+header nav .nav-butt .butt3 {
+  padding: 5px 20px;
+  background-color: orangered;
+  border: thin solid rgba(22, 24, 35, 0.0588235294);
+  font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+}
+header nav .nav-butt .iconmenu a {
+  text-decoration: none;
+}
+header nav .nav-butt .iconmenu a .iicon1 {
+  width: 15px;
+}
+header nav .nav-butt .iconmenu .dropdown {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  gap: 1px;
+}
+header nav .nav-butt .iconmenu .dropdown ul {
+  display: none;
+}
+header nav .nav-butt .iconmenu .dropdown ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
+header nav .nav-butt .iconmenu .dropdown ul li img {
+  width: 40px;
+}
+header nav .nav-butt .iconmenu:hover .dropdown {
+  position: absolute;
+  display: flex;
+  right: 10px;
+  background-color: white;
+  box-shadow: 0 0 5px 0 grey;
+  border-radius: 5px;
+}
+header nav .nav-butt .iconmenu:hover .dropdown ul {
+  display: block;
+}
+header nav .nav-butt .iconmenu:hover .dropdown .english {
+  line-height: 2.4;
+  font-size: 18px;
+  font-weight: bold;
+  list-style-type: none;
+  text-decoration: none;
+}
+header .horizontalnav {
+  width: 20%;
+  min-height: 100%;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+header .horizontalnav .horiiicon {
+  display: flex;
+  border-bottom: thin solid rgba(230, 225, 225, 0.973);
+  height: 30vh;
+  width: 100%;
+  margin-top: 15px;
+}
+header .horizontalnav .horiiicon .horiiicon1 {
+  line-height: 2.6;
+}
+header .horizontalnav .horiiicon .horiiicon1 li {
+  list-style-type: none;
+  text-decoration: none;
+  margin-left: -20px;
+}
+header .horizontalnav .horiiicon .horiiicon2 li {
+  text-decoration: none;
+  list-style-type: none;
+}
+header .horizontalnav .horiiicon .horiiicon2 li a {
+  text-decoration: none;
+  color: black;
+  font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2.4;
+}
+header .horizontalnav .horiiicon .horiiicon2 li a span {
+  color: rgb(254, 44, 85);
+}
+header .horizontalnav .horiiicon .horiiicon2 li:hover {
+  background-color: rgba(247, 245, 245, 0.897);
+  width: 150px;
+}
+header .horizontalnav p a {
+  color: gray;
+  font-size: 20px;
+  text-decoration: none;
+}
+header .horizontalnav .hoributt {
+  width: 100%;
+  height: 8vh;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(254, 44, 85);
+  border: thin solid rgb(254, 44, 85);
+  background-color: transparent;
+  border-radius: 5px;
+}
+header .horizontalnav .hoributt:hover {
+  background-color: rgb(255, 219, 229);
+}
+header .horizontalnav .create {
+  background-image: url();
+  background-size: cover;
+  border: thin solid black;
+  height: 7vh;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+header .horizontalnav .create a {
+  text-decoration: none;
+  padding-left: 20px;
+}
+header .horizontalnav .create a {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+header .horizontalnav .create a:hover {
+  font-size: 25px;
+  text-decoration: none;
+}
+header .horizontalnav .horilast ul {
+  display: flex;
+}
+header .horizontalnav .horilast ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
+header .horizontalnav .horilast ul li a {
+  color: grey;
+  font-weight: 400;
+  line-height: 2;
+  font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+  font-size: 13px;
+  text-decoration: none;
+}
+header .horizontalnav .horilast ul li a:hover {
+  text-decoration: underline;
+}
+
+.nav2 {
+  width: 70%;
+  margin-left: 25%;
+  display: flex;
+  box-sizing: content-box;
+  overflow-x: auto;
+  height: 40px;
+  padding: 28px 0px 16px;
+  white-space: nowrap;
+  gap: 6px;
+}
+.nav2 a button {
+  background-color: rgba(187, 187, 187, 0.8352941176);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 100%;
+  font-weight: 500;
+}
+.nav2 a button:hover {
+  background-color: #969595;
+}
+
+.section1 {
+  width: 70%;
+  margin-left: 25%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.section1 div video {
+  width: 90%;
+  border-radius: 8px;
+}
+.section1 div img {
+  width: 90%;
+  background-color: #969595;
+}
+
+.section2 {
+  width: 70%;
+  margin-left: 25%;
+  margin-top: -30%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.section2 div video {
+  width: 90%;
+  border-radius: 8px;
+}
+.section2 div img {
+  width: 90%;
+}
+
+.section3 {
+  width: 70%;
+  margin-left: 25%;
+  margin-top: -30%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.section3 div video {
+  width: 90%;
+  border-radius: 8px;
+}
+.section3 div img {
+  width: 90%;
+}
+
+@media (max-width: 1225px) {
+  header nav .nav-butt .butt2 {
+    padding: 5px 20px;
+    background-color: transparent;
+    border: thin solid rgba(22, 24, 35, 0.0588235294);
+    font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+  }
+  header nav .nav-butt .butt3 {
+    padding: 5px 20px;
+    border: thin solid rgba(22, 24, 35, 0.0588235294);
+    font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    color: white;
+  }
+}
+@media (max-width: 968px) {
+  header nav .formi {
+    background-color: rgba(22, 24, 35, 0.0588235294);
+    width: 300px;
+    border-radius: 94px;
+    padding: 12px 14px;
+    margin-left: 95px;
+  }
+  header nav .formi form {
+    width: 90%;
+  }
+  header nav .formi form input {
+    font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0;
+    width: 100%;
+    color: rgb(22, 24, 35);
+    caret-color: rgb(254, 44, 85);
+    display: inline-block;
+    border-right: thin solid rgb(205, 206, 211);
+    z-index: 1;
+  }
+  header nav .formi form .butt1 {
+    padding: 11px 28px 11px 12px;
+    margin: -11px -16px -12px 0px;
+    font-size: 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-left: 0;
+    position: absolute;
+    z-index: 0;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  header nav .formi form .butt1:hover {
+    background-color: rgba(22, 24, 35, 0.0588235294);
+    color: black;
+  }
+  header nav .nav-butt .butt2 {
+    padding: 5px 20px;
+    background-color: transparent;
+    border: thin solid rgba(22, 24, 35, 0.0588235294);
+    font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+  }
+  header nav .nav-butt .butt3 {
+    padding: 5px 20px;
+    border: thin solid rgba(22, 24, 35, 0.0588235294);
+    font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    color: white;
+  }
+}
+@media (max-width: 772px) {
+  header nav .formi {
+    background-color: rgba(22, 24, 35, 0.0588235294);
+    width: 300px;
+    border-radius: 94px;
+    padding: 10px 12px;
+    margin-left: 70px;
+  }
+  header nav .formi form {
+    width: 90%;
+  }
+  header nav .formi form input {
+    font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 5px;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0;
+    width: 100%;
+    color: rgb(22, 24, 35);
+    caret-color: rgb(254, 44, 85);
+    display: inline-block;
+    border-right: thin solid rgb(205, 206, 211);
+    z-index: 1;
+  }
+  header nav .formi form .butt1 {
+    padding: 8px 15px 8px 8px;
+    margin: -11px -16px -12px 0px;
+    font-size: 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-left: 0;
+    position: absolute;
+    z-index: 0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  header nav .formi form .butt1:hover {
+    color: none;
+  }
+  header nav .nav-butt .butt2 {
+    padding: 5px 20px;
+    background-color: transparent;
+    border: thin solid rgba(22, 24, 35, 0.0588235294);
+    font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+  }
+  header nav .nav-butt .butt3 {
+    padding: 5px 20px;
+    border: thin solid rgba(22, 24, 35, 0.0588235294);
+    font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    color: white;
+  }
+}
+@media (max-width: 636px) {
+  header nav div img {
+    width: 60%;
+  }
+  header nav .formi {
+    background-color: rgba(22, 24, 35, 0.0588235294);
+    width: 200px;
+    border-radius: 94px;
+    padding: 10px 8px;
+    margin-left: 5px;
+  }
+  header nav .formi form {
+    width: 90%;
+  }
+  header nav .formi form input {
+    font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 5px;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0;
+    width: 100%;
+    color: rgb(22, 24, 35);
+    caret-color: rgb(254, 44, 85);
+    display: inline-block;
+    border-right: thin solid rgb(205, 206, 211);
+    z-index: 1;
+  }
+  header nav .formi form .butt1 {
+    padding: 5px 10px 5px 5px;
+    margin: -11px -16px -12px 0px;
+    font-size: 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-left: 0;
+    position: absolute;
+    z-index: 0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  header nav .nav-butt {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  header nav .nav-butt .butt2 {
+    padding: 5px 5px;
+    background-color: transparent;
+    border: thin solid rgba(22, 24, 35, 0.0588235294);
+    font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+  }
+  header nav .nav-butt .butt3 {
+    padding: 5px 10px;
+    border: thin solid rgba(22, 24, 35, 0.0588235294);
+    font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    color: white;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    padding: 2px;
+  }
+  header nav div img {
+    width: 100%;
+    margin-top: 5px;
+  }
+  header nav .formi {
+    background-color: rgba(22, 24, 35, 0.0588235294);
+    width: 300px;
+    height: 30px;
+    border-radius: 94px;
+    margin-left: 1px;
+    margin-top: 7px;
+  }
+  header nav .formi form {
+    width: 85%;
+  }
+  header nav .formi form input {
+    font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    color: rgb(22, 24, 35);
+    caret-color: rgb(254, 44, 85);
+    border-right: thin solid rgb(205, 206, 211);
+    z-index: 1;
+    position: relative;
+    bottom: 7px;
+  }
+  header nav .formi form .butt1 {
+    padding: 5px 8px 5px 5px;
+    margin: -11px -10px -10px 0px;
+    font-size: 0;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  header nav .formi form .butt1:hover {
+    color: black;
+  }
+  header nav .nav-butt {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+  }
+  header nav .nav-butt .butt2 {
+    padding: 5px 5px;
+    background-color: transparent;
+    border: thin solid rgba(22, 24, 35, 0.0588235294);
+    font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 300;
+    font-size: 7px;
+  }
+  header nav .nav-butt .butt3 {
+    padding: 5px 5px;
+    border: thin solid rgba(22, 24, 35, 0.0588235294);
+    font-family: TikTokFont, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 300;
+    font-size: 7px;
+    color: white;
+  }
+}
+@media (max-width: 1072px) {
+  header .horizontalnav {
+    border: none;
+  }
+  header .horizontalnav .horiiicon {
+    border-bottom: none;
+  }
+  header .horizontalnav .horiiicon .horiiicon2 {
+    display: none;
+  }
+  header .horizontalnav p {
+    display: none;
+  }
+  header .horizontalnav .hoributt {
+    display: none;
+  }
+  header .horizontalnav .create {
+    border: thin solid rgba(128, 128, 128, 0);
+    width: 20%;
+    height: 2vh;
+    margin-top: -130%;
+  }
+  header .horizontalnav .create .creat {
+    display: block;
+    padding-left: 8%;
+  }
+  header .horizontalnav .create .creat img {
+    display: block;
+    width: 150%;
+    border-radius: 50%;
+  }
+  header .horizontalnav .create a {
+    display: none;
+  }
+  header .horizontalnav .horilast {
+    display: none;
+  }
+}
+@media (max-width: 892px) {
+  header .horizontalnav {
+    border: none;
+  }
+  header .horizontalnav .horiiicon {
+    border-bottom: none;
+  }
+  header .horizontalnav .horiiicon .horiiicon2 {
+    display: none;
+  }
+  header .horizontalnav p {
+    display: none;
+  }
+  header .horizontalnav .hoributt {
+    display: none;
+  }
+  header .horizontalnav .create {
+    border: thin solid rgba(128, 128, 128, 0);
+    width: 20%;
+    height: 2vh;
+    margin-top: -250px;
+  }
+  header .horizontalnav .create .creat {
+    display: block;
+    padding-left: 10px;
+  }
+  header .horizontalnav .create .creat img {
+    display: block;
+    width: 40px;
+    border-radius: 50%;
+  }
+  header .horizontalnav .create a {
+    display: none;
+  }
+  header .horizontalnav .horilast {
+    display: none;
+  }
+}
